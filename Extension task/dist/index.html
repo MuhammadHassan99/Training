@@ -9,24 +9,33 @@
 	</head>
 
 	<body class="container">
-		<img alt="plants and people" src="images/plants-people.png" />
-		<div>
-			<h1>Welcome to Your Personal Carbon Trigger!</h1>
+		<div class="card">
+			<div>
+				<img alt="plants and people" src="images/plants-people.png" />
+			</div>
+			<div class="form-div">
+				<div>
+					<h1>Welcome to Your Personal Carbon Trigger!</h1>
+				</div>
+				<form class="form-data" autocomplete="on">
+					<div>
+						<h2>New? Add your Information</h2>
+					</div>
+					<div class="form-input">
+						<div>
+							<label for="region">Region Name</label>
+							<input type="text" id="region" required class="region-name" />
+						</div>
+						<div>
+							<label for="api">Your API Key from tmrow</label>
+							<input type="text" id="api" required class="api-key" />
+						</div>
+					</div>
+					<button class="search-btn">Submit</button>
+				</form>
+			</div>
+
 		</div>
-		<form class="form-data" autocomplete="on">
-			<div>
-				<h2>New? Add your Information</h2>
-			</div>
-			<div>
-				<label for="region">Region Name</label>
-				<input type="text" id="region" required class="region-name" />
-			</div>
-			<div>
-				<label for="api">Your API Key from tmrow</label>
-				<input type="text" id="api" required class="api-key" />
-			</div>
-			<button class="search-btn">Submit</button>
-		</form>
 		<div class="result">
 			<div class="loading">loading...</div>
 			<div class="errors"></div>
