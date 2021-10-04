@@ -268,7 +268,6 @@ function draw(ctx, objects) {
 }
 
 let onKeyDown = function (e) {
-  console.log(e.keyCode);
   switch (e.keyCode) {
     case 37:
     case 39:
@@ -425,7 +424,7 @@ function runGame() {
 
 window.onload = async () => {
   canvas = document.getElementById("myCanvas");
-  const ctx = canvas.getContext("2d");
+  ctx = canvas.getContext("2d");
 
   heroImg = await loadTexture("spaceArt/png/player.png");
   heroImgLeft = await loadTexture("spaceArt/png/playerLeft.png");
