@@ -1,13 +1,13 @@
 :root {
-  --primary: #0091ea;
-  --primary-light: #7bbde6;
+  --primary: #918344;
+  --primary-light: #cf8e2c;
   --accent: #546e7a;
   --grey: #445;
   --error: #f52;
-  --background: #f5f5f6;
+  --background: #f5f5f66e;
   --background-accent: #cfe5f2;
   --white: #fff;
-  --border: #99a;
+  --border: #8f7e51;
   --radius: 10px;
   --space-xs: 5px;
   --space-sm: 10px;
@@ -33,7 +33,7 @@ body {
 }
 
 h2 {
-  color: var(--primary);
+  color: #37374e;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
@@ -143,12 +143,12 @@ button:focus {
   margin: var(--space-md) 0;
 }
 
-.login-separator > span {
+/* .login-separator > span {
   position: relative;
   top: -0.5em;
-  background-color: var(--background);
+
   padding: var(--space-sm);
-}
+} */
 
 .dashboard-page {
   display: flex;
@@ -301,10 +301,6 @@ button:focus {
 .hide-xs {
   display: none;
 }
-
-/* ------------------------------------------------------------------------ */
-/* Responsive adaptations */
-/* ------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 480px) {
   .hide-xs {

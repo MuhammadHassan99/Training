@@ -174,7 +174,7 @@ async function confirmTransaction() {
 
   const newAccount = {
     ...state.account,
-    balance: state.account.balance - data.amount,
+    balance: state.account.balance + data.amount,
     transactions: [...state.account.transactions, data],
   };
   updateState("account", newAccount);
