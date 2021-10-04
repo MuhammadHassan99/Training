@@ -33,6 +33,35 @@
   --rc: 8px;
 }
 
+.form-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-div {
+  padding: 20px;
+  background-color: rgba(255, 127, 80, 0.445);
+  border-radius: 30px;
+  margin-left: 5%;
+}
+.search-btn {
+  width: 80%;
+  /* margin-left: 40%; */
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --c2: #333;
@@ -141,33 +170,4 @@ input:hover,
 textarea:hover,
 select:hover {
   opacity: 0.8;
-}
-
-.form-data {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.card {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.form-div {
-  padding: 20px;
-  background-color: rgba(255, 127, 80, 0.445);
-  border-radius: 30px;
-  margin-left: 5%;
-}
-.search-btn {
-  width: 20%;
-  margin-left: 40%;
-}
-.form-input {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: end;
 }
